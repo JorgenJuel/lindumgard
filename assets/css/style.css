@@ -1,0 +1,116 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+body > * {
+  width: 980px;
+}
+* {
+  font-family: Arial, sans-serif;
+}
+/*
+ * Header
+ */
+header.main-header {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  background: #f1f1f1;
+  border-bottom: 1px solid #e5e5e5;
+  width: 100%;
+}
+header.main-header .logo {
+  max-width: 800px;
+}
+header.main-header .logo h1 {
+  font-size: 2.5em;
+}
+header.main-header .logo a {
+  color: #999;
+  text-shadow: -3px -3px 1px rgba(0, 0, 0, 0.9) inset;
+  text-decoration: none;
+}
+header.main-header nav {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  background: #444;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+header.main-header nav ul {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 0;
+  padding: 0;
+  line-height: 39px;
+}
+header.main-header nav ul li {
+  list-style: none;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  padding: 0 4px;
+  margin-right: 30px;
+}
+header.main-header nav ul li:last-child {
+  margin-right: 0;
+}
+header.main-header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+header.main-header nav ul li a:hover {
+  text-decoration: underline;
+}
+header.main-header nav ul li.active {
+  background: url("data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAABgAAAAKCAYAAACuaZ5oAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAH1JREFUeNpi/P//PwORgBmIJ0DZBUD8lyhdIAuIwEJAvP0/AmyHihHUS4zhKkB8+z8muA2Vo8gCeyB++x83eAtVQ5YFOUD88z9h8AeqlmgLmIF48n/SwWSoXrwWoEcmqQAj8omJTFIBSuQTG5mkAnjkwyLzz3/qA3DkAwQYABEvANn67PzPAAAAAElFTkSuQmCC") no-repeat scroll center 33px transparent;
+}
+/*
+ * Main content
+ */
+section.main .content {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+section.main article {
+  flex-grow: 3;
+  margin: 0 15px;
+  background: #e74c3c;
+  /*
+		border: 1px solid #ccc;
+		box-shadow: 0 1px rgba(0,0,0,.4);*/
+}
+section.main aside {
+  flex-grow: 1;
+  margin: 0 15px;
+  background: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 1px rgba(0, 0, 0, 0.4);
+}
