@@ -1,3 +1,9 @@
+<?php 
+	require_once("config.php"); 
+	require_once("connect.php");
+	require_once("functions.php");
+	$page = getPage();
+?>
 <!doctype html>
 <html>
 <head>
@@ -10,12 +16,7 @@
 		<div class="logo">
 			<h1><a href="/">Lindumgard.no</a></h1>
 		</div>
-		<nav>
-			<ul>
-				<li class="active"><a href="/index.php">Hjem</a></li>
-				<li><a href="/index.php">Om</a></li>
-			</ul>
-		</nav>
+		<?php require_once("menu.php"); ?>
 	</header>
 	<section class="main">
 		

@@ -1,18 +1,16 @@
 <?php
 require_once("inc/header.php");
 ?>
-  <div class="content sidebar">
-    <?php if(isset($_GET["q"])){$q = $_GET["q"];}else{$q = "";}?>
+  <div class="content<?php if($page->sidebar) echo " sidebar"; ?>">
   	<article>
-      <h2>Dette er en artikkel</h2>
-      <h2>Dette er en artikkel</h2>
-      <h2>Dette er en artikkel</h2>
-      <h2>Dette er en artikkel</h2>
-      <?php echo $q; ?>
+      <h1 class="entry-title"><?php echo $page->title; ?></h1>
+      <?php echo $page->content; ?>
   	</article>
+    <?php if($page->sidebar): ?>
     <aside>
       <h1>Dette er ved siden av</h1>
     </aside>
+    <?php endif; ?>
   </div>
 <?php
 require_once("inc/footer.php");
