@@ -1,11 +1,15 @@
 	</section>
 	<footer class="main-footer">
     <div class="info">
-      <h3>Praktisk info</h3>
-      <p>Her vil det komme litt praktisk info om meg</p>
+      <div>
+        <h3>Praktisk info</h3>
+        <p>Her vil det komme litt praktisk info om meg</p>
+      </div>
     </div>
     <div class="copyright">
-  		<p>Copyright &copy; 2014 Jørgen Juel</p>
+      <div>
+    		<p>Copyright &copy; 2014 Jørgen Juel</p>
+      </div>
     </div>
 	</footer>
 </body>
