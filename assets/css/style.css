@@ -125,6 +125,7 @@ section.main article {
   /*
 		border: 1px solid #ccc;
 		box-shadow: 0 1px rgba(0,0,0,.4);*/
+
 }
 section.main .sidebar article {
   width: 700px;
@@ -150,7 +151,7 @@ footer.main-footer {
   display: -moz-flex;
   display: -webkit-flex;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
 }

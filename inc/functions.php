@@ -4,6 +4,24 @@ if(isset($_GET["q"])){
 }else{
   $slug = "home";
 }
+function find_page($slug){
+  $pages = scandir("templates");
+  $template = array_filter(
+      $pages, 
+      function($var) use ($slug) { 
+        return preg_match("/\b$slug\b/i", $var); 
+      }
+    );
+  $template = array_shift($template);
+  $return = new stdClass;
+  if(!is_null($template))
+    $return->template = "templates/".$template;
+  else
+    $return->template = "templates/404.php";
+  $return->slug = "404";
+  $return->title = "Page could not be found (error 404)";
+  return $return;
+}
 function get_page(){
   global $slug;
   global $conn;
@@ -11,6 +29,7 @@ function get_page(){
     $return = new stdClass;
     $return->slug = "home";
     $return->title = "Hjem";
+    $return->template = "templates/home.php";
     return $return;
   }
   try{
@@ -18,12 +37,11 @@ function get_page(){
     $stmt->execute(array('slug' => $slug));
     $result = $stmt->fetchAll(PDO::FETCH_OBJ);
     if(count($result)){
+      if(!isset($result[0]->template))
+        $result[0]->template = "templates/page.php";
       return $result[0];
     }else{
-      $return = new stdClass;
-      $return->slug = "404";
-      $return->title = "Page could not be found (error 404)";
-      return $return;
+      return find_page($slug);
     }
   }catch(PDOException $e){
     echo 'ERROR: '. $e->getMessage();
