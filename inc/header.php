@@ -2,12 +2,12 @@
 	require_once("config.php"); 
 	require_once("connect.php");
 	require_once("functions.php");
-	$page = getPage();
+	$page = get_page();
 ?>
 <!doctype html>
 <html>
 <head>
-	<title>Lindumgard</title>
+	<title><?php echo $page->title; ?></title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="/assets/css/style.css">
 </head>

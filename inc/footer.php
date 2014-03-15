@@ -3,7 +3,7 @@
     <div class="info">
       <div>
         <h3>Praktisk info</h3>
-        <p>Her vil det komme litt praktisk info om meg</p>
+        <p>Her vil det komme litt mer info</p>
       </div>
     </div>
     <div class="copyright">

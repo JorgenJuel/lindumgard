@@ -1,17 +1,11 @@
 <?php
 require_once("inc/header.php");
 ?>
-  <div class="content<?php if($page->sidebar) echo " sidebar"; ?>">
-  	<article>
-      <h1 class="entry-title"><?php echo $page->title; ?></h1>
-      <?php echo $page->content; ?>
-  	</article>
-    <?php if($page->sidebar): ?>
-    <aside>
-      <h1>Dette er ved siden av</h1>
-    </aside>
-    <?php endif; ?>
-  </div>
+<?php switch($page->slug){
+  case "404": require_once("404.php"); break;
+  case "home": require_once("home.php"); break;
+  default: require_once("page.php");break;
+}?>
 <?php
 require_once("inc/footer.php");
 ?> 
