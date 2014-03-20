@@ -2,7 +2,8 @@
 	require_once("config.php"); 
 	require_once("connect.php");
 	require_once("functions.php");
-	$page = get_page();
+	global $conn;
+	$page = new Page($conn);
 ?>
 <!doctype html>
 <html>
