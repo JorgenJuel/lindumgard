@@ -11,6 +11,7 @@
 	<title><?php echo $page->title; ?></title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="/assets/css/style.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
 </head>
 <body>
 	<header class="main-header">
