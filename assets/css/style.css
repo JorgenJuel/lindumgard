@@ -70,6 +70,11 @@ header#main-header nav {
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
+  -webkit-transition: box-shadow 0.3s ease-in-out;
+  -moz-transition: box-shadow 0.3s ease-in-out;
+  -ms-transition: box-shadow 0.3s ease-in-out;
+  -o-transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
 }
 header#main-header nav ul {
   display: -moz-flex;
@@ -119,6 +124,7 @@ header#main-header.scrolled nav {
   position: fixed;
   top: 0;
   left: 0;
+  box-shadow: 0 1px 20px 0px rgba(0, 0, 0, 0.5);
 }
 /*
  * Main content
@@ -184,6 +190,56 @@ section.main img.img-center {
   display: block;
 }
 /*
+ * Scaffolding
+ */
+.flex {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.flex > * {
+  padding: 15px;
+  box-sizing: border-box;
+}
+.flex .grow12 {
+  width: 100%;
+}
+.flex .grow11 {
+  width: 91.6667%;
+}
+.flex .grow10 {
+  width: 83.3333%;
+}
+.flex .grow9 {
+  width: 75%;
+}
+.flex .grow8 {
+  width: 66.6667%;
+}
+.flex .grow7 {
+  width: 58.3333%;
+}
+.flex .grow6 {
+  width: 50%;
+}
+.flex .grow5 {
+  width: 41.6667%;
+}
+.flex .grow4 {
+  width: 33.3333%;
+}
+.flex .grow3 {
+  width: 25%;
+}
+.flex .grow2 {
+  width: 16.6667%;
+}
+.flex .grow1 {
+  width: 08.3333%;
+}
+/*
  * Main Footer
  */
 footer.main-footer {
@@ -217,6 +273,7 @@ footer.main-footer .info {
 footer.main-footer .copyright {
   border-top: 1px solid #eee;
   background: #f5f5f5;
+  text-align: center;
 }
 @media only screen and (max-width: 970px) {
   section.main article {

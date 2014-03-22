@@ -75,6 +75,11 @@ header#main-header{
 		flex-wrap: wrap;
 		justify-content:center;
 		width: 100%;
+		-webkit-transition: box-shadow .3s ease-in-out;
+		-moz-transition: box-shadow .3s ease-in-out;
+		-ms-transition: box-shadow .3s ease-in-out;
+		-o-transition: box-shadow .3s ease-in-out;
+		transition: box-shadow .3s ease-in-out;
 		ul{
 			.displayflex();
 			flex-direction:row;
@@ -123,6 +128,7 @@ header#main-header{
 			position: fixed;
 			top:0;
 			left: 0;
+			box-shadow: 0 1px 20px 0px rgba(0,0,0,.5);
 		}
 	}
 }
@@ -264,6 +270,7 @@ footer.main-footer{
 	.copyright{
 		border-top: 1px solid #eee;
 		background: #f5f5f5;
+		text-align: center;
 	}
 }
 @media only screen and (max-width: @max-width){
