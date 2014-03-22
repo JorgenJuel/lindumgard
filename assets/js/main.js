@@ -51,7 +51,9 @@ function hasClass(id, checkClass){
   }
 }
 
-
+/*
+ * On menubutton click, activate or deactivate mobile menu
+ */
 var menuButton = document.getElementById("mobile-menu");
 menuButton.onclick = function () {
   if(hasClass("main-menu", "active")){
@@ -61,3 +63,23 @@ menuButton.onclick = function () {
   }
   return false;
 };
+
+
+
+/*
+ * On scroll past header, activate menubar
+ */
+//var body = document.getElementsByTagName("body");
+function onScrollEventHandler(){
+  console.log(window.pageYOffset);
+  if(window.pageYOffset>95){
+    addClass("main-header", "scrolled");
+  }else{
+    removeClass("main-header", "scrolled");
+  }
+}
+if(window.addEventListener){
+  window.addEventListener('scroll', onScrollEventHandler, false);
+}else if(window.attachEvent){
+  window.attachEvent('scroll', onScrollEventHandler);
+}

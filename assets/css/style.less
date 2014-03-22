@@ -50,7 +50,7 @@ h6{
 /*
  * Header
  */
-header.main-header{
+header#main-header{
 	.displayflex();
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -115,6 +115,16 @@ header.main-header{
 			width: 36px;
 		}
 	}
+	&.scrolled{
+		.logo{
+			margin-bottom: 40px;
+		}
+		nav{
+			position: fixed;
+			top:0;
+			left: 0;
+		}
+	}
 }
 /*
  * Main content
@@ -170,6 +180,60 @@ section.main{
 }
 .visible-mobile, .hidden-desktop{
 	display: none;
+}
+.visible-scroll{
+	display: none;
+}
+.scrolled .visible-scroll{
+	display: block;
+}
+/*
+ * Scaffolding
+ */
+.flex{
+  .displayflex();
+  flex-flow: row wrap;
+  justify-content: space-around;
+  > *{
+    padding:15px;
+    box-sizing:border-box;
+  }
+  .grow12{
+    width: 100%;
+  }
+  .grow11{
+    width: 91.6667%;
+  }
+  .grow10{
+    width: 83.3333%;
+  }
+  .grow9{
+    width: 75%;
+  }
+  .grow8{
+    width: 66.6667%;
+  }
+  .grow7{
+    width: 58.3333%;
+  }
+  .grow6{
+    width: 50%;
+  }
+  .grow5{
+    width: 41.6667%;
+  }
+  .grow4{
+    width: 33.3333%;
+  }
+  .grow3{
+    width: 25%;
+  }
+  .grow2{
+    width: 16.6667%;
+  }
+  .grow1{
+    width: 08.3333%;
+  }
 }
 /*
  * Main Footer
@@ -228,7 +292,7 @@ footer.main-footer{
 	}
 }
 @media only screen and (max-width: @max-mobile){
-	header.main-header{
+	header#main-header{
 		nav{
 			ul{
 				flex-direction:column;

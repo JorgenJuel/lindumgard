@@ -14,7 +14,7 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no">
 </head>
 <body>
-	<header class="main-header">
+	<header id="main-header">
 		<div class="logo">
 			<h1><a href="/">Lindumgard.no</a></h1>
 		</div>
