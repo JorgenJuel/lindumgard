@@ -1,0 +1,4 @@
+/*
+ * Snippet Author: CSS-Tricks
+ * src: http://css-tricks.com/snippets/javascript/addclass-function/
+ */function addClass(e,t){var n,r=0;t=t.split(",");for(n=0;n<t.length;n++)if((" "+document.getElementById(e).className+" ").indexOf(" "+t[n]+" ")===-1){document.getElementById(e).className+=" "+t[n];r++}return r}function removeClass(e,t){var n,r=0;t=t.split(",");for(n=0;n<t.length;n++)if((" "+document.getElementById(e).className+" ").indexOf(" "+t[n]+" ")===1){var i=document.getElementById(e).className;document.getElementById(e).className=i.replace(t[n],"");r++}return r}function hasClass(e,t){return document.getElementById(e).className.search(t)!==-1?1:0}var menuButton=document.getElementById("mobile-menu");menuButton.onclick=function(){hasClass("main-menu","active")?removeClass("main-menu","active"):addClass("main-menu","active");return!1};

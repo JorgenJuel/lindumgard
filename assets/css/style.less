@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,300);
+@import url(glyphicons.css);
 .displayflex(){
 	display: -moz-flex;
 	display: -webkit-flex;
@@ -6,6 +7,7 @@
 }
 @width: 940px;
 @max-width: 970px;
+@max-mobile: 480px;
 @blue: #3498db;
 
 body, html{
@@ -106,6 +108,12 @@ header.main-header{
 				}
 			}
 		}
+		#mobile-menu{
+			text-indent: -9999px;
+			margin-right: 0;
+			cursor: pointer;
+			width: 36px;
+		}
 	}
 }
 /*
@@ -153,6 +161,15 @@ section.main{
 			margin: 0 auto;
 		}
 	}
+}
+/*
+ * General Clases
+ */
+.hidden-mobile, .visible-desktop{
+	display: block;
+}
+.visible-mobile, .hidden-desktop{
+	display: none;
 }
 /*
  * Main Footer
@@ -208,5 +225,41 @@ footer.main-footer{
 				width:100%;
 			}
 		}
+	}
+}
+@media only screen and (max-width: @max-mobile){
+	header.main-header{
+		nav{
+			ul{
+				flex-direction:column;
+				width:100%;
+				display: none;
+				&.active{
+					.displayflex();
+				}
+				li{
+					width:100%;
+					text-align: center;
+					background:none;
+					&.active{
+						background: rgba(255,255,255,.4);
+					}
+					&:hover{
+						background: rgba(0,0,0,.4);
+					}
+					a{
+						display: block;
+						width: 100%;
+						height: 100%;
+					}
+				}
+			}
+		}
+	}
+	.hidden-mobile, .visible-desktop{
+		display: none;
+	}
+	.visible-mobile, .hidden-desktop{
+		display: block;
 	}
 }
