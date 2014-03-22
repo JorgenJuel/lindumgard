@@ -117,6 +117,12 @@ header#main-header nav #mobile-menu {
   cursor: pointer;
   width: 36px;
 }
+header#main-header nav .mobile-title {
+  margin: 0 10px 0 0;
+  line-height: 48px;
+  color: #fff;
+  font-weight: normal;
+}
 header#main-header.scrolled .logo {
   margin-bottom: 40px;
 }
@@ -188,6 +194,9 @@ section.main img.img-center {
 }
 .scrolled .visible-scroll {
   display: block;
+}
+.visible-scroll-mobile {
+  display: none;
 }
 /*
  * Scaffolding
@@ -327,6 +336,9 @@ footer.main-footer .copyright {
   }
   .visible-mobile,
   .hidden-desktop {
+    display: block;
+  }
+  .scrolled .visible-scroll-mobile {
     display: block;
   }
 }

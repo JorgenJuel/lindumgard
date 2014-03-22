@@ -119,6 +119,12 @@ header#main-header{
 			cursor: pointer;
 			width: 36px;
 		}
+		.mobile-title{
+			margin: 0 10px 0 0;
+			line-height: 48px;
+			color: #fff;
+			font-weight: normal;
+		}
 	}
 	&.scrolled{
 		.logo{
@@ -192,6 +198,9 @@ section.main{
 }
 .scrolled .visible-scroll{
 	display: block;
+}
+.visible-scroll-mobile{
+	display: none;
 }
 /*
  * Scaffolding
@@ -331,6 +340,9 @@ footer.main-footer{
 		display: none;
 	}
 	.visible-mobile, .hidden-desktop{
+		display: block;
+	}
+	.scrolled .visible-scroll-mobile{
 		display: block;
 	}
 }
