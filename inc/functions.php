@@ -69,7 +69,7 @@ class Page{
       $this->findTemplate();
     }else{
       $stmt->fetch();
-      if(is_empty($this->template)){
+      if(empty($this->template)){
         $this->template = "templates/page.php";
       }
     }
