@@ -71,7 +71,7 @@ menuButton.onclick = function () {
  */
 //var body = document.getElementsByTagName("body");
 function onScrollEventHandler(){
-  console.log(window.pageYOffset);
+  //console.log(window.pageYOffset);
   if(window.pageYOffset>95){
     addClass("main-header", "scrolled");
   }else{

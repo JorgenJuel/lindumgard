@@ -119,7 +119,7 @@ class Page{
 
     // If template is found
     }else{
-      $this->template = $template;
+      $this->template = "templates/" . $template;
       $this->slug = "404";
       $this->title = "Page could not be found (error 404)";
     }

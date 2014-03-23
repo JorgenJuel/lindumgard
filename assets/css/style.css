@@ -11,7 +11,7 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-content: center;
+  align-items: center;
   justify-content: center;
   font-size: 14px;
 }
@@ -39,6 +39,14 @@ h5 {
 h6 {
   font-size: .8em;
 }
+blockquote {
+  margin: 15px;
+}
+blockquote .by {
+  font-style: italic;
+  text-align: right;
+  display: block;
+}
 /*
  * Header
  */
@@ -46,15 +54,17 @@ header#main-header {
   display: -moz-flex;
   display: -webkit-flex;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
+  flex-wrap: nowrap;
   justify-content: center;
+  align-items: center;
   background: #f1f1f1;
   border-bottom: 1px solid #e5e5e5;
   width: 100%;
 }
 header#main-header .logo h1 {
   font-size: 2.5em;
+  text-align: center;
 }
 header#main-header .logo a {
   color: #999;
@@ -340,5 +350,8 @@ footer.main-footer .copyright {
   }
   .scrolled .visible-scroll-mobile {
     display: block;
+  }
+  .flex > * {
+    width: 100%;
   }
 }
