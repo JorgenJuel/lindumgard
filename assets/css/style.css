@@ -176,6 +176,18 @@ header#main-header nav #mobile-menu {
   margin-right: 0;
   cursor: pointer;
   width: 36px;
+  height: 48px;
+  padding-left: 0;
+}
+header#main-header nav #mobile-menu:before {
+  font-size: 28px;
+  width: 36px;
+  height: 48px;
+  line-height: 48px;
+  margin-right: 0;
+  text-indent: 0;
+  color: #fff;
+  text-align: center;
 }
 header#main-header nav .mobile-title {
   margin: 0 10px 0 0;
