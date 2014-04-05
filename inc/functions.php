@@ -2,6 +2,7 @@
 
 class Page{
   public $slug;
+  public $parent_slug;
   public $template = "templates/page.php";
   public static $connect;
   public $id;
@@ -12,6 +13,8 @@ class Page{
   public $sidebar;
   public $forfatter;
   public $epost;
+  public $parent;
+  public $parent_url = "";
 
 
   /**
@@ -49,7 +52,7 @@ class Page{
   {
     try{
       $stmt = self::$connect->prepare("
-        SELECT innhold.id AS id, slug, title, content, excerpt, created, modified, template, sidebar, concat(fornavn, ' ', etternavn) AS forfatter, epost 
+        SELECT innhold.id AS id, slug, title, content, excerpt, created, modified, template, sidebar, parent, parent_url, concat(fornavn, ' ', etternavn) AS forfatter, epost 
         FROM innhold 
         LEFT OUTER JOIN forfatter ON author = forfatter.id 
         WHERE slug = :slug 
@@ -71,6 +74,8 @@ class Page{
       $stmt->fetch();
       if(empty($this->template)){
         $this->template = "templates/page.php";
+      }else{
+        $this->template = "templates/".$this->template;
       }
     }
   }
@@ -83,7 +88,15 @@ class Page{
   protected function assignSlug()
   {
     if(isset($_GET["q"])){
-      $this->slug = $_GET["q"];
+      $slug = $_GET["q"];
+      $pos = strpos($slug, "/");
+      if($pos !== false){
+        //Contains a parent slug as well
+        $parent_slug = substr($slug, 0, $pos);
+        $slug = substr($slug, $pos+1, strlen($slug));
+      }
+
+      $this->slug = $slug;
     }else{
       $this->slug = "home";
     }
@@ -103,6 +116,7 @@ class Page{
 
     // Filter and search for slug within files
     $slug = $this->slug;
+    echo $slug;
     $template = array_filter(
         $pages, 
         function($var) use ($slug) { 
@@ -116,12 +130,12 @@ class Page{
     // If template is not found
     if(is_null($template)){
       $this->template = "templates/404.php";
-
+      $this->slug = "404";
+      $this->title = "Page could not be found (error 404)";
     // If template is found
     }else{
       $this->template = "templates/" . $template;
-      $this->slug = "404";
-      $this->title = "Page could not be found (error 404)";
+      $this->title = $slug . " | Lindumgard.no";
     }
 
   }
@@ -144,5 +158,53 @@ class Page{
     }catch(PDOException $e){
       echo 'ERROR: '. $e->getMessage();
     }
+  }
+
+  /**
+   * Retrieves breadcrumbs from page object
+   *
+   * @return String containing HTML breadcrumb markup
+   */
+  public function getBreadcrumbs()
+  {
+    $sep = ' > ';
+    $output = '<p class="breadcrumbs">';
+    $output .= '<a href="/">Hjem</a>';
+    $output .= $sep;
+    if(!empty($this->parent)){
+      $output .= '<a href="/'.$this->parent_url.'">'.$this->parent.'</a> ';
+      $output .= $sep;
+    }
+    $output .= '<span class="current">'.$this->title.'</span>';
+    $output .= '</p>';
+
+    return $output;
+  }
+
+
+  /**
+   * Retrieves date for page creation og modification
+   *
+   * @param String, date to return
+   * @param String, format date should be returned as
+   *
+   * @return void
+   */
+  public function getDate($type = "pub", $format = "")
+  {
+    switch($type){
+      case "pub": 
+        $time = $this->created; 
+        break;
+      case "mod": 
+        $time = $this->modified;
+        break;
+      default:
+        $time = $this->created;
+        break;
+    }
+
+    $date = new DateTime($time); 
+    return $date->format($format); 
   }
 }
