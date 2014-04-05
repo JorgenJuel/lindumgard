@@ -47,12 +47,74 @@ h5{
 h6{
 	font-size: .8em;
 }
+a{
+	&.no-style{
+		text-decoration: none;
+	}
+}
 blockquote{
 	margin: 15px;
 	.by{
 		font-style: italic;
 		text-align: right;
 		display: block;
+		&:before{
+			content: "- ";
+		}
+	}
+}
+table{
+	max-width: 100%;
+	margin-bottom: 20px;
+	background: transparent;
+	border-collapse: collapse;
+	border-spacing: 0;
+	&.full{
+		width: 100%;
+	}
+	&.color{
+		tbody{
+			tr:nth-child(2n){
+				background: #f9f9f9;
+			}
+		}
+	}
+	tbody, thead, tfoot{
+		tr{
+			td{
+				padding: 8px;
+				line-height: 1.4;
+				vertical-align: top;
+				border-top: 1px solid #eee;
+				text-align: center;
+			}
+		}
+	}
+	thead{
+		tr{
+			th{
+				vertical-align: bottom;
+				border-bottom: 2px solid #eee;
+			}
+		}
+	}
+}
+.breadcrumbs{
+	a{
+		color:#000;
+		text-decoration: none;
+		margin-right:7px;
+		margin-left: 7px;
+		&:hover{
+			text-decoration: underline;
+		}&:first-child{
+			margin-left: 0px;
+		}
+	}
+	.current{
+		color:#999;
+		margin-left: 7px;
+		font-style: italic;
 	}
 }
 /*
@@ -90,6 +152,7 @@ header#main-header{
 		-ms-transition: box-shadow .3s ease-in-out;
 		-o-transition: box-shadow .3s ease-in-out;
 		transition: box-shadow .3s ease-in-out;
+		z-index: 50;
 		ul{
 			.displayflex();
 			flex-direction:row;
@@ -191,6 +254,72 @@ section.main{
 		}
 		&.img-center{
 			margin: 0 auto;
+		}
+		&.full{
+			width: 100%;
+			height: auto;
+		}
+	}
+}
+#brukskart{
+	width: 100%;
+	height: 300px;
+	img{
+		background: transparent;
+		border: none;
+		padding: 0;
+	}
+}
+.color_box{
+	width:100%;
+	background: #9c9c9c;
+	color:#fff;
+	text-align: center;
+	font-size:18px;
+	padding: 20px;
+	box-sizing:border-box;
+	p{
+		margin-bottom: 0;
+	}
+	span, span:before{
+		width: 100%;
+		padding: 0;
+		height: 80px;
+	}
+	span:before{
+		font-size: 80px;
+		color:#fff;
+		display: block;
+		text-align: center;
+	}
+	&.red{
+		background: #c43434;
+			background: #e65d5d;
+			background: #e74c3c;
+		&:hover{
+			background: #e65d5d;
+		background: #c43434;
+		background: #c0392b;
+		}
+	}
+	&.blue{
+		background: #428e9e;
+			background: #6fc1d2;
+			background: #3498db;
+		&:hover{
+			background: #6fc1d2;
+		background: #428e9e;
+		background: #2980b9;
+		}
+	}
+	&.green{
+		background: #508b61;
+			background: #7dc692;
+		background: #2ecc71;
+		&:hover{
+			background: #7dc692;
+		background: #508b61;
+		background: #27ae60;
 		}
 	}
 }
@@ -357,7 +486,7 @@ footer.main-footer{
 	}
 
 	.flex{
-	  > *{
+	 	.grow1, .grow2, .grow3, .grow4, .grow5, .grow6, .grow7, .grow8, .grow9, .grow10, .grow11{
 	    width:100%;
 	  }
 	}

@@ -3,6 +3,7 @@
     <article>
       <?php //var_dump($page); ?>
       <header>
+        <?php echo $page->getBreadcrumbs(); ?>
         <h1 class="entry-title"><?php echo $page->title; ?></h1>
       </header>
       <div class="page-content">
@@ -15,15 +16,8 @@
         </div>
         <div class="grow6">
           <h3>Metadata:</h3>
-          <p>Publisert: </p>
-          <?php $date = new DateTime($page->created); echo $date->format('Y-m-d');  ?>
-          <?php echo "<pre>";
-          //var_dump($date);
-          $created = $page->created;
-          var_dump($created);
-          echo date_format($created, "Y-m-d H:i:s");
-          echo "</pre>";?>
-          <p>Sist endret: <?php echo $page->modified; ?></p>
+          <p>Publisert: <?php echo $page->getDate("pub", "d/m/Y"); ?></p>
+          <p>Sist endret: <?php echo $page->getDate("pub", "d/m/Y"); ?></p>
         </div>
       </footer>
     </article>

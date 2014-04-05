@@ -11,11 +11,11 @@
           <p>Her vil det komme litt mer info</p>
         </div>
         <div class="grow4">
-          <blockquote>Lat oss ikkje Forfederne gløyma<br>
+          <blockquote><p>Lat oss ikkje Forfederne gløyma<br>
             Under alt, som me venda og snu,<br>
             For dei gav oss ein Arv til at gjøyma;<br>
             Han er større, en mange vil tru.
-            <span class="by">Ivar Aasen.</span></blockquote>
+            <span class="by">Ivar Aasen.</span></p></blockquote>
 
         </div>
       </div>
@@ -27,6 +27,6 @@
     </div>
 	</footer>
 
-  <script type="text/javascript" src="assets/js/main.js"></script>
+  <script type="text/javascript" src="/assets/js/main.js"></script>
 </body>
 </html>
