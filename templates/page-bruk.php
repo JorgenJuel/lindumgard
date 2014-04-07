@@ -13,7 +13,8 @@
       function initialize() {
         var mapOptions = {
           center: new google.maps.LatLng(59.687383, 10.256372),
-          zoom: 13
+          zoom: 13,
+          mapTypeId: google.maps.MapTypeId.SATELLITE
         };
         var map = new google.maps.Map(document.getElementById("brukskart"),
             mapOptions);
@@ -57,26 +58,41 @@
       </header>
       
       <div id="brukskart"></div>
+      <div class="flex">
+        <div class="grow4">
+          <h2>Bruk nr 1</h2>
+          <p>Selve "Hovedgården", Lindumgård, som nå befinner seg ved lindumveien 48. Dette bruket ble skilt ut av Lindumgård og solgt av Nils Persønn til John Larssøn (Hans svigersønn, gift med Maren Nilsdatter).</p>
+        </div>
 
-      <h2>Bruk nr 1</h2>
-      <p>Selve "Hovedgården", Lindumgård, som nå befinner seg ved lindumveien 48. Dette bruket ble skilt ut av Lindumgård og solgt av Nils Persønn til John Larssøn (Hans svigersønn, gift med Maren Nilsdatter).</p>
+        <div class="grow4">
+          <h2>Bruk nr 2</h2>
+          <p>Dette bruket ble skilt ut av bruk 1 i 1850. Eieren var Jørgen Johnsen, etterfulgt av Halvor Christoffersen Juel.</p>
+        </div>
 
-      <h2>Bruk nr 2</h2>
-      <p>Dette bruket ble skilt ut av bruk 1 i 1850. Eieren var Jørgen Johnsen, etterfulgt av Halvor Christoffersen Juel.</p>
+        <div class="grow4">
+          <h2>Bruk nr 3</h2>
+          <p>Når hele gården var et samlet bruk var det her boplassen var. Den ble i 1864 utskilt fra bruk 1 av Anders Christoffersen Juel og overtatt av Otto Andreas Halvorsen Juel</p>
+        </div>
 
-      <h2>Bruk nr 3</h2>
-      <p>Når hele gården var et samlet bruk var det her boplassen var. Den ble i 1864 utskilt fra bruk 1 av Anders Christoffersen Juel og overtatt av Otto Andreas Halvorsen Juel</p>
+        <div class="grow4">
+          <h2>Bruk nr 4</h2>
+          <p>Ble skilt ut av Anders Christoffersen Juel den 4 februar 1864, sammen med bruk 3.</p>
+        </div>
 
-      <h2>Bruk nr 4</h2>
-      <p>Ble skilt ut av Anders Christoffersen Juel den 4 februar 1864, sammen med bruk 3.</p>
+        <div class="grow4">
+          <h2>Bruk nr 9</h2>
+          <p>Dette bruket ble skilt ut av bruk 1, og er sammensatt av flere mindre tidligere utskilte bruk. Hoveddelen av denne ble kjøpt i 1873, og det ble da bruk nr 9.</p>
+        </div>
 
-      <h2>Bruk nr 9</h2>
-      <p>Dette bruket ble skilt ut av bruk 1, og er sammensatt av flere mindre tidligere utskilte bruk. Hoveddelen av denne ble kjøpt i 1873, og det ble da bruk nr 9.</p>
+        <div class="grow4">
+          <h2>Bruk nr 15</h2>
+          <p>Dette var det andre store bruket som ble skilt ut av lindumgård i 1708. Brukets første eier var Per Peterssønn (gift med Ingeborg Nilsdatter)</p>
+        </div>
 
-      <h2>Bruk nr 15</h2>
-      <p>Dette var det andre store bruket som ble skilt ut av lindumgård i 1708. Brukets første eier var Per Peterssønn (gift med Ingeborg Nilsdatter)</p>
-      
-      <h2>Bruk nr 20</h2>
-      <p>Et mindre bruk skilt ut på begynnelsen av 1900-tallet, og "våningshuset" ble bygget i 1913, etterfulgt av sidebygning med drengstue i 1928</p>
+        <div class="grow4">
+          <h2>Bruk nr 20</h2>
+          <p>Et mindre bruk skilt ut på begynnelsen av 1900-tallet, og "våningshuset" ble bygget i 1913, etterfulgt av sidebygning med drengstue i 1928</p>
+        </div>
+      </div>
     </article>
   </div>

@@ -63,6 +63,10 @@ blockquote{
 		}
 	}
 }
+.table-responsive{
+	max-width: 100%;
+	overflow-x: visible;
+}
 table{
 	max-width: 100%;
 	margin-bottom: 20px;
@@ -74,7 +78,7 @@ table{
 	}
 	&.color{
 		tbody{
-			tr:nth-child(2n){
+			tr:nth-child(odd){
 				background: #f9f9f9;
 			}
 		}
@@ -501,5 +505,10 @@ footer.main-footer{
 	 	.grow1, .grow2, .grow3, .grow4, .grow5, .grow6, .grow7, .grow8, .grow9, .grow10, .grow11{
 	    width:100%;
 	  }
+	}
+}
+@media screen and (max-height: 400px){
+	#brukskart{
+		height:200px;
 	}
 }

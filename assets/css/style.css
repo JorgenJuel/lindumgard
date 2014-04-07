@@ -53,6 +53,10 @@ blockquote .by {
 blockquote .by:before {
   content: "- ";
 }
+.table-responsive {
+  max-width: 100%;
+  overflow-x: visible;
+}
 table {
   max-width: 100%;
   margin-bottom: 20px;
@@ -63,7 +67,7 @@ table {
 table.full {
   width: 100%;
 }
-table.color tbody tr:nth-child(2n) {
+table.color tbody tr:nth-child(odd) {
   background: #f9f9f9;
 }
 table tbody tr td,
@@ -492,5 +496,10 @@ footer.main-footer .copyright {
   .flex .grow10,
   .flex .grow11 {
     width: 100%;
+  }
+}
+@media screen and (max-height: 400px) {
+  #brukskart {
+    height: 200px;
   }
 }
