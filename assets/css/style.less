@@ -5,6 +5,11 @@
 	display: -webkit-flex;
 	display: flex;
 }
+.boxSizing(){
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
 @width: 940px;
 @max-width: 970px;
 @max-mobile: 480px;
@@ -254,7 +259,7 @@ section.main{
 		background: #f9f9f9;
 		border: 1px solid #ccc;
 		border-radius: 5px;
-		box-sizing:border-box;
+		.boxSizing();
 		padding: 15px;
 	}
 	img{
@@ -293,7 +298,7 @@ section.main{
 	text-align: center;
 	font-size:18px;
 	padding: 20px;
-	box-sizing:border-box;
+	.boxSizing();
 	p{
 		margin-bottom: 0;
 	}
@@ -366,7 +371,7 @@ section.main{
   justify-content: space-around;
   > *{
     padding:15px;
-    box-sizing:border-box;
+    .boxSizing();
   }
   .grow12{
     width: 100%;

@@ -236,7 +236,12 @@ section.main aside {
   background: #f9f9f9;
   border: 1px solid #ccc;
   border-radius: 5px;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
   box-sizing: border-box;
+  /* Opera/IE 8+ */
   padding: 15px;
 }
 section.main img {
@@ -274,7 +279,12 @@ section.main img.full {
   text-align: center;
   font-size: 18px;
   padding: 20px;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
   box-sizing: border-box;
+  /* Opera/IE 8+ */
 }
 .color_box p {
   margin-bottom: 0;
@@ -353,7 +363,12 @@ section.main img.full {
 }
 .flex > * {
   padding: 15px;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
   box-sizing: border-box;
+  /* Opera/IE 8+ */
 }
 .flex .grow12 {
   width: 100%;

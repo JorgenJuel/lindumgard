@@ -22,7 +22,7 @@
         <div class="grow4">
           <a href="/besetning-avling/" class="no-style">
             <div class="color_box green" id="besetning">
-              <span class="icon shopping_cart"></span>
+              <span class="icon flower"></span>
               <p>Besetning og Avling</p>
             </div>
           </a>
