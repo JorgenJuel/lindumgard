@@ -12,12 +12,12 @@
       <footer class="flex">
         <div class="grow6">
           <h3>Forfatter:</h3>
-          <p><b>Jørgen Juel</b>
+          <p><strong>Jørgen Juel</strong></p>
         </div>
         <div class="grow6">
-          <h3>Metadata:</h3>
-          <p>Publisert: <?php echo $page->getDate("pub", "d/m/Y"); ?></p>
-          <p>Sist endret: <?php echo $page->getDate("pub", "d/m/Y"); ?></p>
+          <br>
+          <p>Publisert: <strong><?php echo $page->getDate("pub", "d/m/Y"); ?></strong></p>
+          <p>Sist endret: <strong><?php echo $page->getDate("pub", "d/m/Y"); ?></strong></p>
         </div>
       </footer>
     </article>
