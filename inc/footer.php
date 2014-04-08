@@ -7,8 +7,8 @@
           <p>Lindumveien 48<br>3036 Drammen</p>
         </div>
         <div class="grow4">
-          <h3>Praktisk info</h3>
-          <p>Her vil det komme litt mer info</p>
+          <h3>Bakgrunnsinformasjon</h3>
+          <p>Mitt navn er Jørgen Juel, og jeg er odelgutt på Lindum Gård. Denne nettsiden har blitt laget for å gjøre tekster fra kirkebøker og andre tekster tilgjengelige for alle.</p>
         </div>
         <div class="grow4">
           <blockquote><p>Lat oss ikkje Forfederne gløyma<br>

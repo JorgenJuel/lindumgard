@@ -1,7 +1,6 @@
 
   <div class="content">
     <article>
-      <h1 class="title">Overskrift 1</h1>
       <div class="flex">
         <div class="grow4">
           <a href="/bruk/" class="no-style">
@@ -28,17 +27,7 @@
           </a>
         </div>
       </div>
-      <h1>Overskrift 1</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend, neque at vulputate porttitor, dui nisi adipiscing justo, iaculis euismod lacus mauris sit amet ligula. In ut congue justo. Proin varius enim magna, eu lacinia leo iaculis eget. Suspendisse tempor quam orci, sed pretium risus fringilla a. Quisque consectetur pulvinar enim, sed iaculis tortor elementum ut. Nullam ac fermentum sapien. Vestibulum auctor risus in leo mollis consequat. Donec condimentum eros quis mi auctor, a lacinia ante egestas.</p>
-      <h2>Overskrift 2</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend, neque at vulputate porttitor, dui nisi adipiscing justo, iaculis euismod lacus mauris sit amet ligula. In ut congue justo. Proin varius enim magna, eu lacinia leo iaculis eget. Suspendisse tempor quam orci, sed pretium risus fringilla a. Quisque consectetur pulvinar enim, sed iaculis tortor elementum ut. Nullam ac fermentum sapien. Vestibulum auctor risus in leo mollis consequat. Donec condimentum eros quis mi auctor, a lacinia ante egestas.</p>
-      <h3>Overskrift 3</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend, neque at vulputate porttitor, dui nisi adipiscing justo, iaculis euismod lacus mauris sit amet ligula. In ut congue justo. Proin varius enim magna, eu lacinia leo iaculis eget. Suspendisse tempor quam orci, sed pretium risus fringilla a. Quisque consectetur pulvinar enim, sed iaculis tortor elementum ut. Nullam ac fermentum sapien. Vestibulum auctor risus in leo mollis consequat. Donec condimentum eros quis mi auctor, a lacinia ante egestas.</p>
-      <h4>Overskrift 4</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend, neque at vulputate porttitor, dui nisi adipiscing justo, iaculis euismod lacus mauris sit amet ligula. In ut congue justo. Proin varius enim magna, eu lacinia leo iaculis eget. Suspendisse tempor quam orci, sed pretium risus fringilla a. Quisque consectetur pulvinar enim, sed iaculis tortor elementum ut. Nullam ac fermentum sapien. Vestibulum auctor risus in leo mollis consequat. Donec condimentum eros quis mi auctor, a lacinia ante egestas.</p>
-      <h5>Overskrift 5</h5>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend, neque at vulputate porttitor, dui nisi adipiscing justo, iaculis euismod lacus mauris sit amet ligula. In ut congue justo. Proin varius enim magna, eu lacinia leo iaculis eget. Suspendisse tempor quam orci, sed pretium risus fringilla a. Quisque consectetur pulvinar enim, sed iaculis tortor elementum ut. Nullam ac fermentum sapien. Vestibulum auctor risus in leo mollis consequat. Donec condimentum eros quis mi auctor, a lacinia ante egestas.</p>
-      <h6>Overskrift 6</h6>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend, neque at vulputate porttitor, dui nisi adipiscing justo, iaculis euismod lacus mauris sit amet ligula. In ut congue justo. Proin varius enim magna, eu lacinia leo iaculis eget. Suspendisse tempor quam orci, sed pretium risus fringilla a. Quisque consectetur pulvinar enim, sed iaculis tortor elementum ut. Nullam ac fermentum sapien. Vestibulum auctor risus in leo mollis consequat. Donec condimentum eros quis mi auctor, a lacinia ante egestas.</p>
+      <p>Lindum gård daterer tilbake til 1708, da gården ble delt i to. Da solgte Nils Perssønn gården til sine to svigersønner. John Larssønn var mannen som kjøpte opp lindumgård bruk nr 1. Videre har eiere med ulikt hell prøvd å drive gården etter beste evne. Det har blitt skilt ut utallige tomter, men samtidig kjøpt opp mye jord.</p>
+      <p>I dag drives gården av min far Pål Jørgen Juel. Nytt fjøs har blitt bygget, nye traktorer og redskaper er kjøpt inn, og vi har omtrent 550 mål jord (inkludert områder som leies)</p>
     </article>
   </div>
