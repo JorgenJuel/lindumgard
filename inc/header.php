@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href="/assets/css/style.css">
 	<meta name="viewport" content="width=device-width, user-scalable=no">
   <?php if(! empty($page->excerpt)): ?>
-    <meta type="description" content="<?php echo $page->excerpt; ?>">
+    <meta name="description" content="<?php echo $page->excerpt; ?>">
   <?php endif; ?>
 </head>
 <body>
