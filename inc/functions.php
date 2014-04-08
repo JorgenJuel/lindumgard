@@ -8,7 +8,7 @@ class Page{
   public $id;
   public $title;
   public $content;
-  public $excerpt;
+  public $excerpt = "Lindumgard, gården som har eksistert siden slutten av begynnelsen av 1700-tallet.";
   public $modified;
   public $sidebar;
   public $forfatter;
