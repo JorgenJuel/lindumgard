@@ -31,6 +31,7 @@ Teknologier brukt
 * PDO (klassen)
 
 **MYSQL**
+* ER modellering
 * Primærnøkler
 * Fremmednøkler
 * Atomærprinsippet
