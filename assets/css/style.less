@@ -70,7 +70,7 @@ blockquote{
 }
 .table-responsive{
 	max-width: 100%;
-	overflow-x: visible;
+	overflow-x: scroll;
 }
 table{
 	max-width: 100%;
@@ -314,33 +314,21 @@ section.main{
 		text-align: center;
 	}
 	&.red{
-		background: #c43434;
-			background: #e65d5d;
-			background: #e74c3c;
+		background: #e74c3c;
 		&:hover{
-			background: #e65d5d;
-		background: #c43434;
-		background: #c0392b;
+			background: #c0392b;
 		}
 	}
 	&.blue{
-		background: #428e9e;
-			background: #6fc1d2;
-			background: #3498db;
+		background: #3498db;
 		&:hover{
-			background: #6fc1d2;
-		background: #428e9e;
-		background: #2980b9;
+			background: #2980b9;
 		}
 	}
 	&.green{
-		background: #508b61;
-			background: #7dc692;
 		background: #2ecc71;
 		&:hover{
-			background: #7dc692;
-		background: #508b61;
-		background: #27ae60;
+			background: #27ae60;
 		}
 	}
 }
@@ -468,6 +456,9 @@ footer.main-footer{
 	}
 }
 @media only screen and (max-width: @max-mobile){
+	html, body{
+		overflow-x: hidden;
+	}
 	header#main-header{
 		nav{
 			ul{
@@ -495,6 +486,9 @@ footer.main-footer{
 				}
 			}
 		}
+	}
+	section.main{
+		width:100%;
 	}
 	.hidden-mobile, .visible-desktop{
 		display: none;

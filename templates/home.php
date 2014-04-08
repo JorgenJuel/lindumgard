@@ -1,6 +1,7 @@
 
   <div class="content">
     <article>
+      <h1 class="title">Kom i gang</h1>
       <div class="flex">
         <div class="grow4">
           <a href="/bruk/" class="no-style">
@@ -27,6 +28,7 @@
           </a>
         </div>
       </div>
+      <h2>Litt info</h2>
       <p>Lindum gård daterer tilbake til 1708, da gården ble delt i to. Da solgte Nils Perssønn gården til sine to svigersønner. John Larssønn var mannen som kjøpte opp lindumgård bruk nr 1. Videre har eiere med ulikt hell prøvd å drive gården etter beste evne. Det har blitt skilt ut utallige tomter, men samtidig kjøpt opp mye jord.</p>
       <p>I dag drives gården av min far Pål Jørgen Juel. Nytt fjøs har blitt bygget, nye traktorer og redskaper er kjøpt inn, og vi har omtrent 550 mål jord (inkludert områder som leies)</p>
     </article>

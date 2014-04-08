@@ -55,7 +55,7 @@ blockquote .by:before {
 }
 .table-responsive {
   max-width: 100%;
-  overflow-x: visible;
+  overflow-x: scroll;
 }
 table {
   max-width: 100%;
@@ -302,33 +302,21 @@ section.main img.full {
   text-align: center;
 }
 .color_box.red {
-  background: #c43434;
-  background: #e65d5d;
   background: #e74c3c;
 }
 .color_box.red:hover {
-  background: #e65d5d;
-  background: #c43434;
   background: #c0392b;
 }
 .color_box.blue {
-  background: #428e9e;
-  background: #6fc1d2;
   background: #3498db;
 }
 .color_box.blue:hover {
-  background: #6fc1d2;
-  background: #428e9e;
   background: #2980b9;
 }
 .color_box.green {
-  background: #508b61;
-  background: #7dc692;
   background: #2ecc71;
 }
 .color_box.green:hover {
-  background: #7dc692;
-  background: #508b61;
   background: #27ae60;
 }
 /*
@@ -462,6 +450,10 @@ footer.main-footer .copyright {
   }
 }
 @media only screen and (max-width: 480px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
   header#main-header nav ul {
     flex-direction: column;
     width: 100%;
@@ -487,6 +479,9 @@ footer.main-footer .copyright {
     display: block;
     width: 100%;
     height: 100%;
+  }
+  section.main {
+    width: 100%;
   }
   .hidden-mobile,
   .visible-desktop {
